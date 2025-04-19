@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormFactr - Your Fitness Blueprint</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
+        body { background-color: #f5f5f5; color: #333; line-height: 1.6; }
+        header { position: sticky; top: 0; background-color: #fff; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); z-index: 1000; }
+        header .logo { font-size: 24px; font-weight: 700; color: #2e7d32; }
+        nav a { margin-left: 20px; text-decoration: none; color: #333; font-weight: 500; }
+        nav a:hover { color: #2e7d32; }
+        .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1600x900/?fitness'); background-size: cover; color: #fff; padding: 0 20px; }
+        .hero h1 { font-size: 48px; margin-bottom: 20px; font-weight: 700; }
+        .hero p { font-size: 18px; margin-bottom: 30px; max-width: 600px; }
+        .hero a { background-color: #2e7d32; color: #fff; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: 500; }
+        .hero a:hover { background-color: #1b5e20; }
+        .services { padding: 60px 40px; text-align: center; background-color: #fff; }
+        .services h2 { font-size: 36px; margin-bottom: 40px; }
+        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; }
+        .service-card { padding: 20px; background-color: #f5f5f5; border-radius: 10px; transition: transform 0.3s; }
+        .service-card:hover { transform: translateY(-5px); }
+        .service-card h3 { font-size: 24px; margin-bottom: 15px; }
+        .service-card p { font-size: 16px; color: #666; }
+        .about { padding: 60px 40px; text-align: center; background-color: #f5f5f5; }
+        .about h2 { font-size: 36px; margin-bottom: 20px; }
+        .about p { max-width: 800px; margin: 0 auto; font-size: 18px; color: #666; }
+        .contact { padding: 60px 40px; text-align: center; background-color: #fff; }
+        .contact h2 { font-size: 36px; margin-bottom: 20px; }
+        .contact p { font-size: 18px; margin-bottom: 30px; }
+        .contact a { background-color: #2e7d32; color: #fff; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: 500; }
+        .contact a:hover { background-color: #1b5e20; }
+        footer { padding: 20px; text-align: center; background-color: #333; color: #fff; }
+        footer p { font-size: 14px; }
+        footer a { color: #2e7d32; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        @media (max-width: 768px) {
+            header { padding: 20px; }
+            nav a { margin-left: 10px; font-size: 14px; }
+            .hero h1 { font-size: 32px; }
+            .hero p { font-size: 16px; }
+            .services h2, .about h2, .contact h2 { font-size: 28px; }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">FormFactr</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <h1>Your Fitness Blueprint</h1>
+        <p>Personalized workout plans, nutrition advice, and injury prevention tips to optimize your health.</p>
+        <a href="#contact">Get Started</a>
+    </section>
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>Custom Workouts</h3>
+                <p>Tailored splits designed for your goals and fitness level.</p>
+            </div>
+            <div class="service-card">
+                <h3>Nutrition Plans</h3>
+                <p>Expert advice to fuel your performance and recovery.</p>
+            </div>
+            <div class="service-card">
+                <h3>Injury Prevention</h3>
+                <p>Techniques to stay strong and move safely.</p>
+            </div>
+            <div class="service-card">
+                <h3>Health Optimization</h3>
+                <p>Holistic tips for long-term wellness.</p>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2>About FormFactr</h2>
+        <p>FormFactr is dedicated to empowering you with personalized fitness and health solutions. Our mission is to help you achieve your goals through custom workout splits, smart nutrition, and sustainable habits.</p>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <p>Ready to transform your fitness? Contact us via Instagram for a custom plan or free tips!</p>
+        <a href="https://instagram.com/formfactr" target="_blank">DM Us on Instagram</a>
+    </section>
+    <footer>
+        <p>© 2025 FormFactr. Follow us on <a href="https://instagram.com/formfactr" target="_blank">Instagram</a>.</p>
+    </footer>
+</body>
+</html>
